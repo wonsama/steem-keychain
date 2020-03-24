@@ -1,8 +1,8 @@
 {
-  "name": "__MSG_keychain__",
-  "description": "__MSG_description__",
+  "name": "SteemKeychain",
+  "description": "Steem keychain",
   "default_locale": "en",
-  "version": "1.7.3",
+  "version": "1.0.1",
   "permissions": [
     "activeTab",
     "declarativeContent",
@@ -16,11 +16,11 @@
   ],
   "browser_action": {
     "default_popup": "html/popup.html",
-    "default_icon": "images/keychain_icon_small.png"
+    "default_icon": "images/steemicon_small.png"
   },
   "icons": {
-    "16": "images/keychain_icon_small.png",
-    "32": "images/keychain_icon_small.png"
+    "16": "images/steemicon_small.png",
+    "32": "images/steemicon_small.png"
   },
   "background": {
     "scripts": [
