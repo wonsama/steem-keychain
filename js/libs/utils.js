@@ -343,6 +343,7 @@ function initiateCustomSelect() {
     if (i == 4 && custom_created) return;
     if (i == 4 && !custom_created) custom_created = true;
     selElmnt = x[i].getElementsByTagName("select")[0];
+    if ($(x[i]).find("div.select-selected").length) continue;
 
     /*for each element, create a new DIV that will act as the selected item:*/
     a = document.createElement("DIV");
@@ -391,6 +392,7 @@ function initiateCustomSelect() {
       if (
         this.innerHTML.includes(chrome.i18n.getMessage("popup_add_account"))
       ) {
+        $("#add_import_keys").hide();
         showAddAccount();
       } else if (
         !getPref &&

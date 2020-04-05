@@ -1,6 +1,6 @@
 class AccountsList {
   constructor() {
-    this.accounts = {};
+    this.accounts = {list: []};
   }
   init(accounts, last_account) {
     if (accounts) {
@@ -34,13 +34,8 @@ class AccountsList {
     return this.accounts.list[id];
   }
   save(mk) {
-    const accounts = {
-      ...this.accounts,
-      list: this.accounts.list.map(e => e.getObj())
-    };
-    console.log(accounts);
     chrome.storage.local.set({
-      accounts: encryptJson(accounts, mk)
+      accounts: this.encrypt(mk)
     });
   }
   clear() {
@@ -49,6 +44,21 @@ class AccountsList {
   }
   isEmpty() {
     return !this.accounts.list || !this.accounts.list.length;
+  }
+  import(accounts, mk) {
+    console.log(this.accounts.list);
+    for (const account of accounts) {
+      if (!this.accounts.list.find(acc => acc.getName() === account.name))
+        this.accounts.list.push(new Account(account));
+    }
+    this.save(mk);
+  }
+  encrypt(mk) {
+    const accounts = {
+      ...this.accounts,
+      list: this.accounts.list.map(e => e.getObj())
+    };
+    return encryptJson(accounts, mk);
   }
   add(account) {
     if (!this.accounts.list) this.accounts.list = [];

@@ -108,7 +108,7 @@ $(".back_account_types").click(() => {
 
 $("#add_rpc_div .back_enabled").click(function() {
   chrome.storage.local.get(["rpc", "current_rpc"], function(items) {
-    loadRPC(items.rpc, items.current_rpc);
+    loadRPC(items.current_rpc);
     initiateCustomSelect();
     $("#add_rpc_div").hide();
     $("#pref_div").show();
@@ -214,6 +214,11 @@ $("#autolock").click(function() {
 $("#keychainify").click(function() {
   $("#settings_div").hide();
   $("#keychainify_settings").show();
+});
+
+$("#import_export").click(function() {
+  $("#settings_div").hide();
+  $("#import_settings").show();
 });
 
 // Show transaction window
@@ -323,6 +328,9 @@ function showAddAccount() {
       $("#add_account_div").hide();
     });
 }
+$("#add_import_keys").click(() => {
+  importKeys();
+});
 
 $("#add_by_auth").click(() => {
   $("#add_account_types_div").hide();

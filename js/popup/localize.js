@@ -109,6 +109,9 @@ $("#change_pwd span").text(
 $("#preferences span").text(chrome.i18n.getMessage("popup_html_pref"));
 $("#autolock span").text(chrome.i18n.getMessage("popup_html_autolock"));
 $("#keychainify span").text(chrome.i18n.getMessage("popup_html_keychainify"));
+$("#import_export span").text(
+  chrome.i18n.getMessage("popup_html_import_export")
+);
 $("#about span").text(chrome.i18n.getMessage("popup_html_about"));
 $("#clear span").text(chrome.i18n.getMessage("popup_html_clear"));
 
@@ -147,6 +150,19 @@ $("#enable_keychainify_title").text(
 $("#enable_keychainify_info").text(
   chrome.i18n.getMessage("popup_html_enable_keychainify_info")
 );
+// Import / Export
+$("#import_settings .back_enabled").text(
+  chrome.i18n.getMessage("popup_html_import_export")
+);
+$("#import_settings p").html(
+  chrome.i18n.getMessage("popup_html_import_export_text")
+);
+$("#import_settings button")
+  .eq(0)
+  .html(chrome.i18n.getMessage("popup_html_import"));
+$("#import_settings button")
+  .eq(1)
+  .html(chrome.i18n.getMessage("popup_html_export"));
 
 //about
 $("#about_div .back_enabled").text(chrome.i18n.getMessage("popup_html_about"));
@@ -411,6 +427,8 @@ $("#witness_toggle").text(chrome.i18n.getMessage("popup_html_support"));
 //add accounts new
 $("#add_by_keys").text(chrome.i18n.getMessage("popup_html_add_by_keys"));
 $("#add_by_auth").text(chrome.i18n.getMessage("popup_html_add_by_auth"));
+$("#add_import_keys").text(chrome.i18n.getMessage("popup_html_import_keys"));
+
 $("#add_account_types_div p").html(
   chrome.i18n.getMessage("popup_html_chose_add_method")
 );

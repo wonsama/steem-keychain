@@ -170,7 +170,7 @@ function initializeMainMenu() {
           decryptToJson(items.accounts, mk),
           items.last_account
         );
-      loadRPC(items.rpc, items.current_rpc);
+      loadRPC(items.current_rpc);
       console.log(accountsList.getList());
       $("#accounts").empty();
       if (!accountsList.isEmpty()) {
@@ -191,8 +191,8 @@ function initializeMainMenu() {
       } else {
         $("#main").hide();
         $("#register").hide();
-        $("#add_account_div").show();
-        $("#add_account_div .back_enabled").addClass("back_disabled");
+        $("#add_account_types_div").show();
+        $("#add_account_types_div .back_enabled").addClass("back_disabled");
       }
     }
   );
