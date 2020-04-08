@@ -596,7 +596,7 @@ input:focus {
 /*style items (options):*/
 .select-items {
   position: absolute;
-  background-color: rgba(0, 96, 96, 0.84);
+  background-color: #377ecd;
   top: 100%;
   left: 0;
   right: 0;
@@ -651,7 +651,7 @@ input:focus {
 
 .select-items div:hover,
 .same-as-selected {
-  background-color: rgba(0, 96, 96, 1);
+  background-color: #274efd9c;
 }
 
 #currency_send {

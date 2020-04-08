@@ -60,7 +60,7 @@ const loadAccount = async name => {
   prepareDelegationTab();
   preparePowerUpDown();
   showTokenBalances();
-  proposeWitnessVote(witness_votes, proxy);
+  // proposeWitnessVote(witness_votes, proxy);
   getAccountHistory();
 };
 
