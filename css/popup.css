@@ -1264,12 +1264,12 @@ input:focus {
 .witness_container {
   position: relative;
   display: inline-block;
-  width: 108px;
+  width: 115px;
   margin-top: 10px;
 }
 
 .witness_container button {
-  width: 107px;
+  width: 115px;
   height: 32px;
   border: none;
   border-radius: 5px;

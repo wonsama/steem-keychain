@@ -31,7 +31,7 @@ function getPubkeyWeight(
 }
 
 // Load account information
-const loadAccount = async name => {
+const loadAccount = async (name) => {
   console.log(`Load account ${name}`);
   activeAccount = accountsList.get(name);
   console.log(activeAccount);
@@ -39,7 +39,7 @@ const loadAccount = async name => {
   $("#recipient").autocomplete({
     source: to_autocomplete[activeAccount.getName()],
     minLength: 2,
-    appendTo: "#autocomplete_container"
+    appendTo: "#autocomplete_container",
   });
   $("#send_form").toggle(activeAccount.hasKey("active"));
   $("#show_add_active").toggle(!activeAccount.hasKey("active"));
@@ -60,7 +60,7 @@ const loadAccount = async name => {
   prepareDelegationTab();
   preparePowerUpDown();
   showTokenBalances();
-  // proposeWitnessVote(witness_votes, proxy);
+  proposeWitnessVote(witness_votes, proxy);
   getAccountHistory();
 };
 
@@ -69,7 +69,7 @@ const showUserData = async () => {
   showBalances();
   const [vd, rc] = [
     await activeAccount.getVotingDollars(100),
-    await activeAccount.getRC()
+    await activeAccount.getRC(),
   ];
   $(".transfer_balance div")
     .eq(1)
@@ -97,9 +97,7 @@ const showUserData = async () => {
 
 const getAccountHistory = async () => {
   const transfers = await activeAccount.getTransfers();
-  $("#acc_transfers div")
-    .eq(1)
-    .empty();
+  $("#acc_transfers div").eq(1).empty();
   if (transfers.length != 0) {
     for (transfer of transfers) {
       let memo = transfer[1].op[1].memo;
@@ -135,14 +133,10 @@ const getAccountHistory = async () => {
       var memo_element = $("<div class='memo'></div>");
       memo_element.text(memo);
       transfers_element.append(memo_element);
-      $("#acc_transfers div")
-        .eq(1)
-        .append(transfers_element);
+      $("#acc_transfers div").eq(1).append(transfers_element);
     }
-    $(".transfer_row").click(function() {
-      $(".memo")
-        .eq($(this).index())
-        .slideToggle();
+    $(".transfer_row").click(function () {
+      $(".memo").eq($(this).index()).slideToggle();
     });
   } else
     $("#acc_transfers div")
@@ -165,13 +159,13 @@ $("#add_account_by_auth").click(async () => {
       chrome.i18n.getMessage("popup_accounts_already_registered", [name])
     );
   else {
-    const account = new Account({name, keys: {}});
+    const account = new Account({ name, keys: {} });
     account.init();
     let hasAuth = 0;
     for (const key of ["posting", "active"]) {
       const keyInfo = await account.getAccountInfo(key);
       console.log(keyInfo);
-      if (keyInfo.account_auths.find(e => e.includes(auth))) {
+      if (keyInfo.account_auths.find((e) => e.includes(auth))) {
         hasAuth = 1;
         account.setKey(key, authAccount.getKey(key));
         account.setKey(`${key}Pubkey`, `@${auth}`);
@@ -187,7 +181,7 @@ $("#add_account_by_auth").click(async () => {
   }
 });
 
-$("#check_add_account").click(function() {
+$("#check_add_account").click(function () {
   $("#master_check").css("display", "none");
   const username = $("#username").val();
   const pwd = $("#pwd").val();
@@ -197,7 +191,7 @@ $("#check_add_account").click(function() {
         chrome.i18n.getMessage("popup_accounts_already_registered", [username])
       );
     } else
-      steem.api.getAccounts([username], function(err, result) {
+      steem.api.getAccounts([username], function (err, result) {
         if (result.length != 0) {
           const active_info = result["0"].active;
           const posting_info = result["0"].posting;
@@ -209,31 +203,31 @@ $("#check_add_account").click(function() {
                 name: username,
                 keys: {
                   memo: pwd,
-                  memoPubkey: pub_memo
-                }
+                  memoPubkey: pub_memo,
+                },
               });
             } else if (getPubkeyWeight(pub_unknown, posting_info)) {
               addAccount({
                 name: username,
                 keys: {
                   posting: pwd,
-                  postingPubkey: pub_unknown
-                }
+                  postingPubkey: pub_unknown,
+                },
               });
             } else if (getPubkeyWeight(pub_unknown, active_info)) {
               addAccount({
                 name: username,
                 keys: {
                   active: pwd,
-                  activePubkey: pub_unknown
-                }
+                  activePubkey: pub_unknown,
+                },
               });
             }
           } else {
             const keys = steem.auth.getPrivateKeys(username, pwd, [
               "posting",
               "active",
-              "memo"
+              "memo",
             ]);
             const has_active =
               getPubkeyWeight(keys.activePubkey, active_info) != 0;
@@ -266,7 +260,7 @@ $("#check_add_account").click(function() {
 });
 
 // If master key was entered, handle which keys to save.
-$("#save_master").click(function() {
+$("#save_master").click(function () {
   if (
     $("#posting_key").prop("checked") ||
     $("#active_key").prop("checked") ||
@@ -283,13 +277,13 @@ $("#save_master").click(function() {
     );
     addAccount({
       name: $("#username").val(),
-      keys: keys
+      keys: keys,
     });
   }
 });
 
 // Add new account to Chrome local storage (encrypted with AES)
-const addAccount = account => {
+const addAccount = (account) => {
   accountsList.add(new Account(account)).save(mk);
   console.log("init");
   initializeMainMenu();
@@ -297,7 +291,7 @@ const addAccount = account => {
 };
 
 // Display Add Copy or delete individual keys
-const manageKeys = name => {
+const manageKeys = (name) => {
   let index = -1;
   let account = accountsList.getList().filter((obj, i) => {
     if (obj.getName() === name) {
@@ -310,125 +304,70 @@ const manageKeys = name => {
   $(".private_key").html("");
   for (keyName in keys) {
     if (keyName.includes("posting")) {
-      $(".img_add_key")
-        .eq(0)
-        .hide();
-      $(".remove_key")
-        .eq(0)
-        .show();
+      $(".img_add_key").eq(0).hide();
+      $(".remove_key").eq(0).show();
       if (keyName.includes("Pubkey"))
-        $(".public_key")
-          .eq(0)
-          .html(account.getKey(keyName));
+        $(".public_key").eq(0).html(account.getKey(keyName));
       else
-        $(".private_key")
-          .eq(0)
-          .html(REVEAL_PRIVATE)
-          .css("font-size", "12px");
+        $(".private_key").eq(0).html(REVEAL_PRIVATE).css("font-size", "12px");
     } else if (keyName.includes("active")) {
-      $(".img_add_key")
-        .eq(1)
-        .hide();
-      $(".remove_key")
-        .eq(1)
-        .show();
+      $(".img_add_key").eq(1).hide();
+      $(".remove_key").eq(1).show();
       if (keyName.includes("Pubkey"))
-        $(".public_key")
-          .eq(1)
-          .html(account.getKey(keyName));
+        $(".public_key").eq(1).html(account.getKey(keyName));
       else
-        $(".private_key")
-          .eq(1)
-          .html(REVEAL_PRIVATE)
-          .css("font-size", "12px");
+        $(".private_key").eq(1).html(REVEAL_PRIVATE).css("font-size", "12px");
     } else if (keyName.includes("memo")) {
-      $(".remove_key")
-        .eq(2)
-        .show();
-      $(".img_add_key")
-        .eq(2)
-        .hide();
+      $(".remove_key").eq(2).show();
+      $(".img_add_key").eq(2).hide();
       if (keyName.includes("Pubkey"))
-        $(".public_key")
-          .eq(2)
-          .html(account.getKey(keyName));
+        $(".public_key").eq(2).html(account.getKey(keyName));
       else
-        $(".private_key")
-          .eq(2)
-          .html(REVEAL_PRIVATE)
-          .css("font-size", "12px");
+        $(".private_key").eq(2).html(REVEAL_PRIVATE).css("font-size", "12px");
     }
   }
-  if (
-    $(".private_key")
-      .eq(0)
-      .html() === ""
-  ) {
-    $(".img_add_key")
-      .eq(0)
-      .show();
-    $(".remove_key")
-      .eq(0)
-      .hide();
+  if ($(".private_key").eq(0).html() === "") {
+    $(".img_add_key").eq(0).show();
+    $(".remove_key").eq(0).hide();
   }
-  if (
-    $(".private_key")
-      .eq(1)
-      .html() === ""
-  ) {
-    $(".img_add_key")
-      .eq(1)
-      .show();
-    $(".remove_key")
-      .eq(1)
-      .hide();
+  if ($(".private_key").eq(1).html() === "") {
+    $(".img_add_key").eq(1).show();
+    $(".remove_key").eq(1).hide();
   }
-  if (
-    $(".private_key")
-      .eq(2)
-      .html() === ""
-  ) {
-    $(".img_add_key")
-      .eq(2)
-      .show();
-    $(".remove_key")
-      .eq(2)
-      .hide();
+  if ($(".private_key").eq(2).html() === "") {
+    $(".img_add_key").eq(2).show();
+    $(".remove_key").eq(2).hide();
   }
   let timeout = null;
   $(".public_key")
     .unbind("click")
-    .click(function() {
+    .click(function () {
       if (timeout != null) clearTimeout(timeout);
       $("#copied").hide();
       $("#fake_input").val($(this).html());
       $("#fake_input").select();
       document.execCommand("copy");
       $("#copied").slideDown(600);
-      timeout = setTimeout(function() {
+      timeout = setTimeout(function () {
         $("#copied").slideUp(600);
       }, 6000);
     });
 
   $(".private_key")
     .unbind("click")
-    .click(function() {
+    .click(function () {
       if (timeout != null) clearTimeout(timeout);
       if ($(this).html() == REVEAL_PRIVATE) {
-        const type = $(this)
-          .prev()
-          .attr("id");
+        const type = $(this).prev().attr("id");
         const key = accountsList.getById(index).getKey(type);
-        $(this)
-          .html(key)
-          .css("font-size", "10px");
+        $(this).html(key).css("font-size", "10px");
       } else {
         $("#copied").hide();
         $("#fake_input").val($(this).html());
         $("#fake_input").select();
         document.execCommand("copy");
         $("#copied").slideDown(600);
-        timeout = setTimeout(function() {
+        timeout = setTimeout(function () {
           $("#copied").slideUp(600);
         }, 6000);
       }
@@ -436,7 +375,7 @@ const manageKeys = name => {
 
   $(".remove_key")
     .unbind("click")
-    .click(function() {
+    .click(function () {
       accountsList.getById(index).deleteKey($(this).attr("id"));
       accountsList.getById(index).deleteKey(`${$(this).attr("id")}Pubkey`);
       accountsList.save(mk);
@@ -449,13 +388,13 @@ const manageKeys = name => {
   // Delete account and all its keys
   $("#delete_account")
     .unbind("click")
-    .click(function() {
+    .click(function () {
       deleteAccount(index);
     });
   let adding_key = null;
   $(".img_add_key")
     .unbind("click")
-    .click(function() {
+    .click(function () {
       adding_key = $(this)
         .prevAll(".keys_info_type")
         .attr("id")
@@ -469,11 +408,11 @@ const manageKeys = name => {
   // Try to add the new key
   $("#add_new_key")
     .unbind("click")
-    .click(function() {
+    .click(function () {
       const keys = accountsList.getById(index).getKeys();
       const pwd = $("#new_key").val();
 
-      steem.api.getAccounts([name], function(err, result) {
+      steem.api.getAccounts([name], function (err, result) {
         if (result.length != 0) {
           const active_info = result["0"].active;
           const posting_info = result["0"].posting;
@@ -484,7 +423,7 @@ const manageKeys = name => {
               if (keys.hasOwnProperty("memo"))
                 showError(
                   chrome.i18n.getMessage("popup_accounts_already_have_key", [
-                    chrome.i18n.getMessage("memo")
+                    chrome.i18n.getMessage("memo"),
                   ])
                 );
               else addKeys(index, "memo", pwd, pub_memo, name);
@@ -495,7 +434,7 @@ const manageKeys = name => {
               if (keys.hasOwnProperty("posting"))
                 showError(
                   chrome.i18n.getMessage("popup_accounts_already_have_key", [
-                    chrome.i18n.getMessage("posting")
+                    chrome.i18n.getMessage("posting"),
                   ])
                 );
               else addKeys(index, "posting", pwd, pub_unknown, name);
@@ -506,7 +445,7 @@ const manageKeys = name => {
               if (keys.hasOwnProperty("active"))
                 showError(
                   chrome.i18n.getMessage("popup_accounts_already_have_key", [
-                    chrome.i18n.getMessage("active")
+                    chrome.i18n.getMessage("active"),
                   ])
                 );
               else addKeys(index, "active", pwd, pub_unknown, name);
@@ -516,12 +455,12 @@ const manageKeys = name => {
                 adding_key,
                 chrome.i18n.getMessage(adding_key),
                 chrome.i18n.getMessage("popup_accounts_not_your_key", [
-                  chrome.i18n.getMessage(adding_key)
+                  chrome.i18n.getMessage(adding_key),
                 ])
               );
               showError(
                 chrome.i18n.getMessage("popup_accounts_not_your_key", [
-                  chrome.i18n.getMessage(adding_key)
+                  chrome.i18n.getMessage(adding_key),
                 ])
               );
             }
@@ -529,7 +468,7 @@ const manageKeys = name => {
             const keys = steem.auth.getPrivateKeys(name, pwd, [
               "posting",
               "active",
-              "memo"
+              "memo",
             ]);
             console.log(keys);
             switch (adding_key) {
@@ -585,7 +524,7 @@ const showBalances = async () => {
 };
 
 // Delete account (and encrypt the rest)
-const deleteAccount = i => {
+const deleteAccount = (i) => {
   accountsList.delete(i).save(mk);
   $(".settings_child").hide();
   initializeMainMenu();
@@ -598,19 +537,19 @@ const claimRewards = async () => {
     reward_sbd,
     reward_sp,
     reward_steem,
-    rewardText
+    rewardText,
   ] = await activeAccount.getAvailableRewards();
   if (hasReward(reward_sbd, reward_sp, reward_steem)) {
     $("#claim_rewards button").prop("disabled", false);
     $("#claim").show();
     $("#claim")
       .unbind("click")
-      .click(function() {
+      .click(function () {
         $("#claim_rewards").show();
         $("#claim_rewards p").html(rewardText);
         $("#redeem_rewards")
           .unbind("click")
-          .click(function() {
+          .click(function () {
             $("#claim_rewards button").prop("disabled", true);
             if (activeAccount.hasKey("posting"))
               activeAccount.claimRewards(() => {
@@ -622,7 +561,7 @@ const claimRewards = async () => {
           });
         $(".close_claim")
           .unbind("click")
-          .click(function() {
+          .click(function () {
             $("#claim_rewards").hide();
           });
       });
@@ -632,49 +571,50 @@ const claimRewards = async () => {
 const proposeWitnessVote = (witness_votes, proxy) => {
   if (
     !proxy &&
-    (!witness_votes.includes("stoodkev") ||
-      !witness_votes.includes("yabapmatt") ||
-      !witness_votes.includes("aggroed"))
+    !witness_votes.includes("steem-agora")
+    // !witness_votes.includes("stoodkev") ||
+    // !witness_votes.includes("yabapmatt") ||
+    // !witness_votes.includes("aggroed")
   ) {
-    $("#stoodkev img").attr(
+    $("#steem-agora img").attr(
       "src",
       "../images/icon_witness-vote" +
-        (witness_votes.includes("stoodkev") ? "" : "_default") +
+        (witness_votes.includes("steem-agora") ? "" : "_default") +
         ".svg"
     );
-    $("#yabapmatt img").attr(
-      "src",
-      "../images/icon_witness-vote" +
-        (witness_votes.includes("yabapmatt") ? "" : "_default") +
-        ".svg"
-    );
-    $("#aggroed img").attr(
-      "src",
-      "../images/icon_witness-vote" +
-        (witness_votes.includes("aggroed") ? "" : "_default") +
-        ".svg"
-    );
+    // $("#yabapmatt img").attr(
+    //   "src",
+    //   "../images/icon_witness-vote" +
+    //     (witness_votes.includes("yabapmatt") ? "" : "_default") +
+    //     ".svg"
+    // );
+    // $("#aggroed img").attr(
+    //   "src",
+    //   "../images/icon_witness-vote" +
+    //     (witness_votes.includes("aggroed") ? "" : "_default") +
+    //     ".svg"
+    // );
 
-    if (!witness_votes.includes("yabapmatt"))
-      $("#yabapmatt").click(function() {
-        voteFor("yabapmatt");
+    // if (!witness_votes.includes("yabapmatt"))
+    //   $("#yabapmatt").click(function () {
+    //     voteFor("yabapmatt");
+    //   });
+
+    if (!witness_votes.includes("steem-agora"))
+      $("#steem-agora").click(function () {
+        voteFor("steem-agora");
       });
 
-    if (!witness_votes.includes("stoodkev"))
-      $("#stoodkev").click(function() {
-        voteFor("stoodkev");
-      });
+    // if (!witness_votes.includes("aggroed"))
+    //   $("#aggroed").click(function () {
+    //     voteFor("aggroed");
+    //   });
 
-    if (!witness_votes.includes("aggroed"))
-      $("#aggroed").click(function() {
-        voteFor("aggroed");
-      });
-
-    setTimeout(function() {
+    setTimeout(function () {
       $("#witness_votes").show();
       $("#witness_votes").animate(
         {
-          opacity: 1
+          opacity: 1,
         },
         500
       );
@@ -682,10 +622,10 @@ const proposeWitnessVote = (witness_votes, proxy) => {
   } else {
     $("#witness_votes").animate(
       {
-        opacity: 0
+        opacity: 0,
       },
       500,
-      function() {
+      function () {
         $("#witness_votes").hide();
       }
     );
