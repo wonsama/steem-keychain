@@ -504,8 +504,8 @@
     "description": "Main page > Delegate > Click on Outgoing > Edit one of the outgoing delegations"
   },
   "popup_html_support": {
-    "message": "Steem Keychain 작성자에게 증인 투표를 해주시면 Steem Keychain 개발에 도움이 됩니다!",
-    "description": "Support text on the bottom of popup. If you already voted yabapmatt aggroed and stoodkev for witnesses it wont show."
+    "message": "Steem Keychain은 스팀 커뮤니티에 공헌하는 증인을 지원합니다.",
+    "description": "Steem Keychain supports witnesses contributing to the Steem community."
   },
   "popup_accounts_reveal_private": {
     "message": "개인 키 보기",
