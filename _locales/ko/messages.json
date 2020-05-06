@@ -1,38 +1,38 @@
 {
   "keychain": {
-    "message": "Steem Keychain",
-    "description": "Extension name, night not need to translate it."
+    "message": "스팀 키체인",
+    "description": "확장명, 야간 번역 할 필요가 없습니다."
   },
   "description": {
-    "message": "안전한 스팀 지갑 확장 프로그램.",
-    "description": "Extension description, as shown in the store."
+    "message": "보안 지갑 지갑 확장.",
+    "description": "상점에 표시된 확장 설명."
   },
   "transaction_error": {
-    "message": "트랜잭션 오류",
+    "message": "거래 오류",
     "description": "Generic error during transaction"
   },
   "memo": {
-    "message": "메모",
+    "message": "메모키",
     "description": "type of key"
   },
   "posting": {
-    "message": "포스팅",
+    "message": "포스팅키",
     "description": "type of key"
   },
   "active": {
-    "message": "액티브",
+    "message": "엑티브키",
     "description": "type of key"
   },
   "unknown_error": {
-    "message": "오류가 발생했습니다. 다시 시도해주세요!",
+    "message": "문제가 발생했습니다! 다시 시도하십시오!",
     "description": "Generic error"
   },
   "wrong_password": {
-    "message": "잘못된 비밀번호입니다!",
+    "message": "잘못된 비밀번호!",
     "description": "Wrong pwd upon unlocking"
   },
   "full_in": {
-    "message": "충전 완료: $1",
+    "message": "전체 $1",
     "description": "Full in x days x hours x minutes"
   },
   "days": {
@@ -44,11 +44,11 @@
     "description": "Full in x days x hours x minutes"
   },
   "hours": {
-    "message": "시간",
+    "message": "시",
     "description": "Full in x days x hours x minutes"
   },
   "hour": {
-    "message": "시간",
+    "message": "시",
     "description": "Full in x days x hours x minutes"
   },
   "minutes": {
@@ -60,15 +60,15 @@
     "description": "Full in x days x hours x minutes"
   },
   "popup_html_register": {
-    "message": "스팀 계정에 접근할 때 Steem Keychain을 이용하면 더 좋습니다. 간편하면서도 가볍고 안전합니다. <br><br> Keychain 전용 비밀번호를 만드는 것부터 시작해봅시다. 이 비밀번호는 계정에 접근하거나 계정 관련 변경사항이 있을 때 필요합니다.",
+    "message": "스팀 키 체인은 스팀 계정에 액세스하는 더 좋은 방법입니다. 단순한. 경량. 안전한. <br> <br> 키 체인 암호를 만들어 시작하겠습니다. 계정에 액세스하거나 계정을 변경하려면이 비밀번호가 필요합니다.",
     "description": "Text on registration page"
   },
   "popup_html_unlock": {
-    "message": "스팀 계정에 접근할 때 Steem Keychain을 이용하면 더 좋습니다. 간편하면서도 가볍고 안전하니까요.<br/><br/>즐거운 스팀 활동이 되시길.",
+    "message": "스팀 계정에 액세스하는 것이 더 좋습니다. 단순한. 경량. 안전합니다. <br/> <br/> 자유롭게 해보십시오.",
     "description": "Text on unlock page"
   },
   "popup_html_new_password": {
-    "message": "신규 비밀번호",
+    "message": "신규 암호",
     "description": "On settings, change password"
   },
   "popup_html_confirm": {
@@ -76,26 +76,26 @@
     "description": "Generic button"
   },
   "popup_html_submit": {
-    "message": "제출하기",
+    "message": "제출",
     "description": "Generic button"
   },
   "popup_html_password": {
-    "message": "비밀번호",
+    "message": "암호",
     "description": "Placeholder in input for password"
   },
   "popup_html_signin": {
     "message": "로그인"
   },
   "popup_html_forgot": {
-    "message": "비밀번호가 기억나지 않는다면?",
+    "message": "비밀번호를 잊으 셨나요?",
     "description": "On unlock page"
   },
   "popup_html_reset": {
-    "message": "계정 초기화",
+    "message": "계정 재설정",
     "description": "After clicking forgot password"
   },
   "popup_html_reset_desc": {
-    "message": "비밀번호가 기억나지 않을 때, 기존 데이터를 삭제한 후 새롭게 시작할 수 있지만 키를 다시 입력해야 합니다.",
+    "message": "비밀번호를 잊어 버린 경우 데이터를 지울 수 있지만 모든 키를 다시 입력해야합니다.",
     "description": "text after clicking forgot password"
   },
   "popup_html_vm": {
@@ -103,11 +103,11 @@
     "description": "on Keychain popup main page"
   },
   "popup_html_rc": {
-    "message": "리소스 크레딧",
+    "message": "자원 크레딧",
     "description": "on Keychain popup main page"
   },
   "popup_html_send": {
-    "message": "$1 보내기",
+    "message": "$1 전송",
     "description": "ex: Send STEEM"
   },
   "popup_html_pu": {
@@ -120,11 +120,11 @@
     "message": "임대"
   },
   "popup_html_estimation": {
-    "message": "계정 보유 자산 예상 가치",
+    "message": "예상 계정 가치",
     "description": "on popup main page"
   },
   "popup_html_history": {
-    "message": "내역",
+    "message": "이력",
     "description": "on popup main page"
   },
   "popup_html_tokens": {
@@ -140,271 +140,287 @@
     "description": "on popup main page"
   },
   "popup_html_estimation_info_text": {
-    "message": "계정 보유 자산 예상 가치는 보유 자산을 USD로 환산한 대략적인 가치입니다.<br><br>대기 중인 마켓 거래나 전송, 트랜잭션은 가치 산정에 포함되지 않습니다.",
+    "message": "예상 계정 가치는 펀드의 가치가 USD 단위인지에 대한 간단한 아이디어입니다. <br> <br>이 값은 보류중인 시장 거래, 이체 또는 거래를 고려하지 않습니다.",
     "description": "on popup main page, click info near estimated value"
   },
   "popup_html_wallet_history": {
-    "message": "지갑 내역",
+    "message": "지갑 이력",
     "description": "Upon clicking on History"
   },
   "popup_html_setup_text": {
-    "message": "스팀 계정 이름을 입력하고 마스터 비밀번호, 개인 포스팅 키, 개인 액티브 키 가운데 하나를 개인 키 란에 입력하세요. 마스터 비밀번호는 저장되지 않으며, 개인 키 생성 목적으로만 사용될 것입니다.<br/><br/> 언제든지 스팀 계정 또는 키를 추가하거나 삭제할 수 있습니다. 새로운 스팀 계정을 만들고 싶은 경우, <a href=\"https://signup.steemit.com/\" target=\"_blank\" style=\"text-decoration: underline; color: white;\">https://signup.steemit.com/</a>을 통해 계정 생성을 진행할 수 있습니다.",
+    "message": "Steem 계정 이름과 해당 계정의 마스터 비밀번호 또는 개인 게시 또는 활성 키를 아래에 입력하십시오. 마스터 비밀번호는 저장되지 않으며 개인 키를 생성하는 데에만 사용됩니다. <br/> <br/> 언제든지 Steem 계정 또는 키를 추가 / 제거 할 수 있습니다. 새 Steem 계정을 만들어야하는 경우 <a href=\"https://signup.steemit.com/\" target = \"_blank\" style = \"text-decoration : underline; color : white;\"> https://signup.steemit.com/ </a>",
     "description": "When adding new account"
   },
   "popup_html_setup": {
-    "message": "설정",
+    "message": "Setup",
     "description": "when adding new account"
   },
   "popup_html_private_key": {
-    "message": "개인 키",
+    "message": "Private Key",
     "description": "placeholder for entering private key"
   },
   "popup_html_username": {
-    "message": "사용자 이름",
+    "message": "Username",
     "description": "placeholder for entering username"
   },
   "popup_html_import_keys": {
-    "message": "키 가져오기",
+    "message": "Import Keys",
     "description": "Import all keys"
   },
   "popup_html_import_key": {
-    "message": "키 가져오기",
+    "message": "Import Key",
     "description": "Import one key"
   },
   "popup_html_import_success": {
-    "message": "가져오기 성공l! <br><br>Steem Keychain에 저장하고 싶은 키를 선택해주세요:",
+    "message": "Import successful! <br><br>Please select the Keys you wish to store with Steem Keychain:",
     "description": "When adding an account via master key"
   },
   "popup_html_posting": {
-    "message": "포스팅 키",
+    "message": "Posting Key",
     "description": "When adding an account via master key"
   },
   "popup_html_active": {
-    "message": "액티브 키",
+    "message": "Active Key",
     "description": "When adding an account via master key"
   },
   "popup_html_memo": {
-    "message": "메모 키",
+    "message": "Memo Key",
     "description": "When adding an account via master key"
   },
   "popup_html_posting_info": {
-    "message": "포스팅 및 보팅",
+    "message": "For posting and voting",
     "description": "When adding an account via master key"
   },
   "popup_html_active_info": {
-    "message": "전송 및 주문",
+    "message": "For making transfers and orders",
     "description": "When adding an account via master key"
   },
   "popup_html_memo_info": {
-    "message": "메모 보내기 및 읽기",
+    "message": "For sending and reading memos",
     "description": "When adding an account via master key"
   },
   "popup_html_save": {
-    "message": "저장",
+    "message": "Save",
     "description": "Generic button"
   },
   "popup_html_settings": {
-    "message": "설정",
+    "message": "Settings",
     "description": "on settings page"
   },
   "popup_html_add_account": {
-    "message": "계정 추가",
+    "message": "Add Account",
     "description": "on settings page"
   },
   "popup_html_manage_accounts": {
-    "message": "계정 관리",
+    "message": "Manage Accounts",
     "description": "on settings page"
   },
   "popup_html_change_password": {
-    "message": "비밀번호 변경",
+    "message": "Change Password",
     "description": "on settings page"
   },
   "popup_html_pref": {
-    "message": "맞춤 설정",
+    "message": "Preferences",
     "description": "on settings page"
   },
   "popup_html_autolock": {
-    "message": "자동 잠금",
+    "message": "Auto Lock",
     "description": "on settings page"
   },
   "popup_html_keychainify": {
     "message": "Keychainify",
     "description": "on settings page"
   },
+  "popup_html_import_export": {
+    "message": "Import / Export",
+    "description": "on settings page"
+  },
   "popup_html_about": {
-    "message": "Steem Keychain 소개",
+    "message": "About Steem Keychain",
     "description": "on settings page"
   },
   "popup_html_clear": {
-    "message": "모든 데이터 삭제",
+    "message": "Clear All Data",
     "description": "on settings page"
   },
   "popup_html_al_default_title": {
-    "message": "기본",
+    "message": "Default",
     "description": "on autolock settings"
   },
   "popup_html_al_default_info": {
-    "message": "수동으로 keychain 잠그기 또는 브라우저 종료될 때 잠그기",
+    "message": "Lock the keychain manually or when the browser is closed.",
     "description": "on autolock settings"
   },
   "popup_html_al_locked_title": {
-    "message": "기기 잠금",
+    "message": "Device Lock",
     "description": "on autolock settings"
   },
   "popup_html_al_locked_info": {
-    "message": "기기가 잠금 상태로 진입하면 keychain 자동 잠금",
+    "message": "Auto-lock the keychain when the device locks.",
     "description": "on autolock settings"
   },
   "popup_html_al_idle_title": {
-    "message": "유휴 시간 이후 잠김",
+    "message": "Idle Lock",
     "description": "on autolock settings"
   },
   "popup_html_al_idle_info": {
-    "message": "일정 시간 동안 브라우저가 아무 일도 하지 않을 때 keychain 자동 잠금",
+    "message": "Auto-lock the keychain after the browser window is idle for the specified number of minutes.",
     "description": "on autolock settings"
   },
   "popup_html_keychainify_text": {
-    "message": "웹 페이지에서 지원되는 링크를 클릭하거나 브라우저 탭에서 URL에 직접 액세스했을 때,  Steem Keychain 동작이 활성화되는 기능입니다.",
+    "message": "This feature allows you to trigger a Steem Keychain operation when clicking on a supported link on a web page or accessing the URL directly in a browser tab.",
     "description": "on keychainify settings"
   },
   "popup_html_enable_keychainify_title": {
-    "message": "Keychainify 활성화",
+    "message": "Enable Keychainify",
     "description": "on keychainify settings"
   },
   "popup_html_enable_keychainify_info": {
-    "message": "현재는 Steem Connect transfer URL만 지원됩니다.",
+    "message": "Currently only support Steem Connect transfers URLs.",
     "description": "on keychainify settings"
   },
+  "popup_html_import_export_text": {
+    "message": "You can export all your keys encrypted in a file. This will allow you to import them to Keychain on another device or simply safeguard them.<br/><br/>When importing, only accounts that are not already present on the instance will be added.",
+    "description": "on import / export settings"
+  },
+  "popup_html_import": {
+    "message": "Import",
+    "description": "on import / export settings"
+  },
+  "popup_html_export": {
+    "message": "Export",
+    "description": "on import / export settings"
+  },
   "popup_html_about_text": {
-    "message": "Steem Keychain 브라우저 확장 프로그램 <br>아이디어와 컨셉은 스팀 블록체인 증인이자 개발자로 활동 중인 <a href=\"https://steemit.com/@yabapmatt\" target=\"_blank\">@yabapmatt</a>이 구상한 것입니다. 스팀 증인이자 스팀 개발자(SteemPlus)인 <a href=\"https://steemit.com/@stoodkev\" target=\"_blank\">@stoodkev</a>가 Steem Keychain 기능 대부분을 개발했습니다. 설계와 개발 자금은 @aggroed (스팀 상위 20 위 증인 중 한 명), @yabapmatt 이 함께 운영하는 블록체인 기반 수집 카드 거래 게임인 Splinterlands를 통해 지원받았습니다. <a href=\"https://splinterlands.io\" target=\"_blank\">https://splinterlands.io</a>를 방문하시면 Splinterlands에 대해 더 자세한 정보를 확인하실 수 있습니다! (* Steem/Hive 하드포크 이후 기존 개발자는 Hive에서 활동중이기 때문에, Steem 커뮤니티 운영자인 <a href=\"https://steemcoinpan.com\" target=\"_blank\">Steemcoinpan</a>의 개발자가 유지보수 하고 있습니다.)",
+    "message": "The overall idea and concept for the Steem Keychain browser extension was created by <a href=\"https://steemit.com/@yabapmatt\" target=\"_blank\">@yabapmatt</a> who is a developer and witness on the Steem blockchain. It was primarily developed by <a href=\"https://steemit.com/@stoodkev\" target=\"_blank\">@stoodkev</a> who is also a Steem developer (SteemPlus) and witness. The design and development were funded by @aggroed (a top 20 Steem witness) and @yabapmatt through their joint business Splinterlands, which is a blockchain-based collectible trading card game built on top of the Steem blockchain. Be sure to check it out at <a href=\"https://splinterlands.io\" target=\"_blank\">https://splinterlands.io</a>!",
     "description": "on about keychain"
   },
   "popup_html_remove": {
-    "message": "삭제",
+    "message": "Remove",
     "description": "on manage accounts, remove key"
   },
   "popup_html_delete_account": {
-    "message": "이 계정 삭제하기",
+    "message": "DELETE THIS ACCOUNT",
     "description": "on manage accounts"
   },
   "popup_html_select_rpc": {
-    "message": "RPC 노드 선택",
+    "message": "Select an RPC node",
     "description": "on preferences"
   },
   "popup_html_notif_pref": {
-    "message": "알림 설정",
+    "message": "Notification Preferences",
     "description": "on preferences"
   },
   "popup_html_pref_info": {
-    "message": "확인 창이 나타나지 않게 설정된 웹사이트와 트랜잭션 종류를 확인하고 업데이트 하세요.",
+    "message": "View and update the websites and transaction types for which you have opted not to recieve a confirmation prompt.",
     "description": "on preferences"
   },
   "popup_html_no_pref": {
-    "message": "맞춤 설정 항목 없음",
+    "message": "No preferences",
     "description": "on preferences"
   },
   "popup_html_add_rpc": {
-    "message": "RPC 추가",
+    "message": "Add RPC",
     "description": "on preferences"
   },
   "popup_html_add_rpc_text": {
-    "message": "RPC 노드 추가하기:",
+    "message": "Add your RPC node here:",
     "description": "on preferences"
   },
   "popup_html_rpc_node": {
-    "message": "RPC 노드",
+    "message": "RPC Node",
     "description": "on preferences"
   },
   "popup_html_add_key": {
-    "message": "키 추가",
+    "message": "Add Key",
     "description": "on manage accounts, add a previously non stored key"
   },
   "popup_html_add_key_text": {
-    "message": "계정에 <span></span> 개인 키를 추가하세요. 마스터 <br>비밀번호를 입력해서 이러한 키를 추가할 수도 있습니다.",
+    "message": "Add the <span></span> private key to your account. You can also add it by entering your master key.",
     "description": "on preferences, within span will be posting/memo/active"
   },
   "popup_html_copied": {
-    "message": "클립보드에 키 복사됨!",
+    "message": "Key copied to clipboard!",
     "description": "on preferences when clicking on a key"
   },
   "popup_html_change_password_text": {
-    "message": "확인을 위해 기존 비밀 번호를 입력한 후, 신규 비밀번호를 설정하세요.",
+    "message": "Input your old password for confirmation, then chose a new password.",
     "description": "on change password"
   },
   "popup_html_old_password": {
-    "message": "기존 비밀번호",
+    "message": "Old Password",
     "description": "on change password"
   },
   "popup_html_transfer_funds": {
-    "message": "자금 전송",
+    "message": "Transfer Funds",
     "description": "When initiating a STEEM or SBD transfer"
   },
   "popup_html_balance": {
-    "message": "$1 잔액",
+    "message": "$1 Balance",
     "description": "When initiating a STEEM or SBD transfer. $1 is a variable that will be replaced by a currency name."
   },
   "popup_html_loading": {
-    "message": "로딩...",
+    "message": "Loading...",
     "description": "When initiating a STEEM or SBD transfer and the balance is loading."
   },
   "popup_html_memo_optional": {
-    "message": "메모(선택사항)",
+    "message": "MEMO (optional)",
     "description": "When initiating a STEEM or SBD transfer"
   },
   "popup_html_encrypt_memo": {
-    "message": "메모 암호화",
+    "message": "Encrypt Memo",
     "description": "When initiating a STEEM or SBD transfer"
   },
   "popup_html_add_active": {
-    "message": "STEEM 또는 SBD를 보내려면 액티브 키를 추가하세요.",
+    "message": "Please add an active key to send STEEM or SBD.",
     "description": "When trying to send STEEM or SBD but active key was not stored"
   },
   "popup_html_transfer": {
-    "message": "전송",
+    "message": "Transfer",
     "description": "On transfer confirmation page"
   },
   "popup_html_transfer_confirm_text": {
-    "message": "전송 내역을 확인해주세요.<br>실행 후에는 취소할 수 없습니다.",
+    "message": "Please confirm your transfer.<br>This cannot be undone.",
     "description": "On transfer confirmation page"
   },
   "popup_html_transfer_from": {
-    "message": "보낸 사람",
+    "message": "From",
     "description": "On transfer confirmation page"
   },
   "popup_html_transfer_to": {
-    "message": "받는 사람",
+    "message": "To",
     "description": "On transfer confirmation page"
   },
   "popup_html_transfer_amount": {
-    "message": "수량",
+    "message": "Amount",
     "description": "On transfer confirmation page"
   },
   "popup_html_transfer_memo": {
-    "message": "메모",
+    "message": "Memo",
     "description": "On transfer confirmation page"
   },
   "popup_html_not_now": {
-    "message": "다음 기회에",
+    "message": "Not Now",
     "description": "On claim reward page (click little gift icon from main page when rewards are available to claim)"
   },
   "popup_html_redeem": {
-    "message": "클레임",
+    "message": "Claim",
     "description": "On claim reward page (click little gift icon from main page when rewards are available to claim)"
   },
   "popup_html_witness_title": {
-    "message": "증인 투표",
+    "message": "Witness Voting",
     "description": "On witness page"
   },
   "popup_html_witness_disclaimer": {
-    "message": "증인 투표는 최대 최대 30 명까지 가능합니다.",
+    "message": "You may vote for up to 30 witnesses.",
     "description": "On witness page"
   },
   "popup_html_witness_remaining": {
-    "message": "남은 투표: <span>30</span>",
+    "message": "Votes remaining: <span>30</span>",
     "description": "On witness page"
   },
   "popup_html_witness_voted": {
-    "message": "투표현황",
+    "message": "Voted",
     "description": "On witness page. Tab name, keep short"
   },
   "popup_html_witness_top": {
@@ -412,383 +428,383 @@
     "description": "On witness page. Tab name, keep short"
   },
   "popup_html_witness_add": {
-    "message": "추가",
+    "message": "Add",
     "description": "On witness page. Tab name, keep short"
   },
   "popup_html_proxy_desc": {
-    "message": "증인 투표 계정 또는 프록시 계정을 수동으로 입력할 수 있습니다.",
+    "message": "You may manually enter a user to vote for Witness or to set as Proxy.",
     "description": "On witness page > Add"
   },
   "popup_html_witness_vote": {
-    "message": "증인 투표",
+    "message": "Vote for Witness",
     "description": "On witness page > Add > Dropdown"
   },
   "popup_html_chose_proxy": {
-    "message": "프록시 선택",
+    "message": "Chose Proxy",
     "description": "On witness page > Add > Dropdown"
   },
   "popup_html_tokens_available": {
-    "message": "이용 가능한 토큰",
+    "message": "Tokens Available",
     "description": "On tokens page"
   },
   "popup_html_tokens_settings_text": {
-    "message": "토큰 정보를 확인하고 지갑에서 보고 싶은 토큰을 선택하세요. 스팀 블록체인 상의 커스텀 토큰에 관한 추가 정보는 <a href=\"https://steem-engine.com\" target=\"_blank\">https://steem-engine.com</a>에서 확인하실 수 있습니다.",
+    "message": "View token information and chose which tokens to display. Learn more about custom tokens on the Steem blockchain at <a href=\"https://steem-engine.com\" target=\"_blank\">https://steem-engine.com</a>.",
     "description": "On tokens page"
   },
   "popup_html_available": {
-    "message": "이용 가능 수량",
+    "message": "Available",
     "description": "On tokens page"
   },
   "popup_html_tokens_send_text": {
-    "message": "토큰 전송 확인은 30초 정도 소요될 수 있습니다. 인내심을 가지고 기다리세요.",
+    "message": "Sending your tokens may take up to 30 seconds to confirm, please be patient.",
     "description": "On tokens page > Send"
   },
   "popup_html_recipient": {
-    "message": "받는 사람",
+    "message": "Recipient",
     "description": "On tokens page > Send"
   },
   "popup_html_token_confirm_text": {
-    "message": "전송 내역을 확인해주세요.<br>실행 후에는 취소할 수 없습니다.",
+    "message": "Please confirm your transfer.<br>This cannot be undone.",
     "description": "On tokens page > Send > Confirm"
   },
   "popup_html_current": {
-    "message": "현재 상태",
+    "message": "Current",
     "description": "Main page > Power Up . Current SP balance"
   },
   "popup_html_powerup_text": {
-    "message": "스팀을 파워 업하면 스팀 파워로 변환됩니다.",
+    "message": "Power Up your STEEM to transform it in Steem Power.",
     "description": "Main page > Power Up"
   },
   "popup_html_powerdown_text": {
-    "message": "스팀 파워를 파워 다운하면 스팀을 얻을 수 있습니다. 전체 파워 다운 과정이 완료되려면 13주가 소요될 것입니다.",
+    "message": "Power Down your Steem Power to get liquid STEEM. The entire Power Down process will take 13 weeks.",
     "description": "Main page > Power Down"
   },
   "popup_html_powering_down": {
-    "message": "파워 다운 중",
+    "message": "Powering Down",
     "description": "Main page > Power Down. When a power down has been started"
   },
   "popup_html_delegations": {
-    "message": "임대",
+    "message": "Delegations",
     "description": "Main page > Delegate"
   },
   "popup_html_delegations_text": {
-    "message": "스팀 파워(SP)를 다른 사용자에게 임대할 수 있습니다. 임대한 수량을 변경하거나 리뷰하고 싶다면 임대한 수량을 클릭하세요.",
+    "message": "You may delegate your Steem Power (SP) to another user. Click on the Outgoing amount to review or make changes.",
     "description": "Main page > Delegate"
   },
   "popup_html_incoming": {
-    "message": "임대 받은 수량 $1",
+    "message": "Incoming $1",
     "description": "Main page > Delegate. Incoming delegations ($1 is a variable, should be SP)"
   },
   "popup_html_outgoing": {
-    "message": "임대한 수량 $1",
+    "message": "Outgoing $1",
     "description": "Main page > Delegate. Outgoing delegation ($1=SP)"
   },
   "popup_html_delegate_to_user": {
-    "message": "사용자에게 임대하기",
+    "message": "Delegate to user",
     "description": "Main page > Delegate. Confirm a delegation"
   },
   "popup_html_total_outgoing": {
-    "message": "임대한 수량 합계",
+    "message": "Total Outgoing",
     "description": "Main page > Delegate > Click on Outgoing"
   },
   "popup_html_total_incoming": {
-    "message": "임대 받은 수량 합계",
+    "message": "Total Incoming",
     "description": "Main page > Delegate > Click on Incoming"
   },
   "popup_html_edit_delegations": {
-    "message": "임대 정책 편집",
+    "message": "Edit Delegation",
     "description": "Main page > Delegate > Click on Outgoing > Edit one of the outgoing delegations"
   },
   "popup_html_edit_delegations_text": {
-    "message": "이 사용자에게 임대한 수량을 변경하는 곳입니다. 수량 입력 후 변경 사항을 저장하세요.",
+    "message": "You are changing the amount delegated to this user. Edit the amount and save your change.",
     "description": "Main page > Delegate > Click on Outgoing > Edit one of the outgoing delegations"
   },
   "popup_html_support": {
-    "message": "Steem Keychain을 지원해주는 증인을 투표해주십시오.(@steem-agora)",
-    "description": "Please vote for witnesses supporting Steem Keychain.(@steem-agora)"
+    "message": "Click here to support Steem Keychain development by casting your witness votes for the creators!",
+    "description": "Support text on the bottom of popup. If you already voted yabapmatt aggroed and stoodkev for witnesses it wont show."
   },
   "popup_accounts_reveal_private": {
-    "message": "개인 키 보기",
+    "message": "Click to show private key",
     "description": "On manage accounts"
   },
   "popup_accounts_no_bittrex": {
-    "message": "Bittrex와 연결할 수 없습니다",
+    "message": "Bittrex is unreachable",
     "description": "instead of estimated value, if cant reach bittrex api"
   },
   "popup_accounts_add_memo": {
-    "message": "이 메모를 읽으려면 개인 메모키를 추가해야 합니다.",
+    "message": "Add your private memo key to read this memo",
     "description": "if account consults history and there s an encrypted memo, but no memo key for the account"
   },
   "popup_accounts_no_recent_transfers": {
-    "message": "최근 전송 내역이 없습니다",
+    "message": "No recent transfer",
     "description": "if history is empty"
   },
   "popup_accounts_already_registered": {
-    "message": "@$1 계정은 이미 등록되어 있습니다!",
+    "message": "You already registered an account for @$1!",
     "description": "when trying to add an account already saved on keychain"
   },
   "popup_accounts_incorrect_key": {
-    "message": "개인 키 또는 비밀번호가 정확하지 않습니다.",
+    "message": "Incorrect private key or password.",
     "description": "when adding new account with incorrect key"
   },
   "popup_accounts_incorrect_user": {
-    "message": "사용자 이름을 확인하신 후 다시 시도해주세요.",
+    "message": "Please check the username and try again.",
     "description": "when adding new account but the username doesnt exist"
   },
   "popup_accounts_fill": {
-    "message": "필수 입력사항을 모두 입력해주세요.",
+    "message": "Please fill the fields.",
     "description": "when adding new account but not filling all fields"
   },
   "popup_accounts_already_have_key": {
-    "message": "$1 키는 이미 등록되어 있습니다!",
+    "message": "You already entered your $1 key!",
     "description": "when trying to add a new key for the account (in manage accounts), but the key is already there. $1 can stand for active memo or posting"
   },
   "popup_accounts_not_your_key": {
-    "message": "이것은 당신의 $1 키가 아닙니다!",
+    "message": "This is not your $1 key!",
     "description": "Trying to add the wrong key from manage accounts.  $1 can stand for active memo or posting"
   },
   "popup_accounts_not_wif": {
-    "message": "이것은 개인 키 포맷이 아닙니다!",
+    "message": "This is not a private WIF!",
     "description": "not a private key"
   },
   "popup_accounts_try_again": {
-    "message": "나중에 다시 시도해주세요!",
+    "message": "Please try again later!",
     "description": "Generic unknown error, user is invited to try again"
   },
   "popup_accounts_err_claim": {
-    "message": "보상 요청은 개인 포스팅 키 등록이 필요합니다!",
+    "message": "You need to enter your private posting key to claim rewards!",
     "description": "When trying to claim rewards but account doesnt havea stored active key"
   },
   "popup_delegate_key": {
-    "message": "임대를 보내려면 액티브 키를 추가해야 합니다!",
+    "message": "Please add your active key to send delegations!",
     "description": "When trying to send delegation but user doenst have a stored active key"
   },
   "popup_delegate_success": {
-    "message": "임대 성공!",
+    "message": "Your delegation was succesful!",
     "description": "Main menu > Delegate"
   },
   "popup_delegate_change_success": {
-    "message": "임대 변경 성공!",
+    "message": "Your delegation change was succesful!",
     "description": "After editing a delegation"
   },
   "popup_password_mismatch": {
-    "message": "비밀번호가 일치하지 않습니다!",
+    "message": "Your passwords do not match!",
     "description": "when registering a password on keychain"
   },
   "popup_password_regex": {
-    "message": "비밀번호는 소문자, 대문자, 숫자를 포함한 <br> 최소 8자 이상 또는 16자 이상(아무런 제약없이 구성 가능)이어야 합니다.",
+    "message": "Your password must be at least 8 characters long and include a lowercase letter, an uppercase letter and a digit or be at least 16 characters long without restriction.",
     "description": "when registering the master pwd on keychain"
   },
   "popup_add_account": {
-    "message": "새 계정 추가",
+    "message": "Add New Account",
     "description": "From accounts list dropdown"
   },
   "popup_empty": {
-    "message": "메모없음",
+    "message": "Empty",
     "description": "On send STEEM/SBD confirmation page, when memo is empty"
   },
   "popup_encrypted": {
-    "message": "암호화됨",
+    "message": "encrypted",
     "description": "On send STEEM/SBD confirmation page, when memo is encrypted"
   },
   "popup_witness_key": {
-    "message": "증인 투표에 참여하려면 액티브 키를 등록해야 합니다!",
+    "message": "Please add your active key to vote for witnesses!",
     "description": "When trying to vote for witness but user doenst have a stored active key"
   },
   "popup_transfer_success": {
-    "message": "전송 성공!",
+    "message": "Transfer successful!",
     "description": "after sending a transfer"
   },
   "popup_next_powerdown": {
-    "message": "다음 번 파워 다운: $1",
+    "message": "Next power down on $1",
     "description": "on powerdown tab, when a powerdown is currently ongoing,on hover"
   },
   "popup_pu_key": {
-    "message": "파워 업을 하려면 액티브 키를 추가해야 합니다!",
+    "message": "Please add your active key to power up!",
     "description": "When wanting to powerup but no active key stored"
   },
   "popup_pd_key": {
-    "message": "파워 다운을 하려면 액티브 키를 추가해야 합니다!",
+    "message": "Please add your active key to power down!",
     "description": "When wanting to power down but no active key stored"
   },
   "popup_pu_success": {
-    "message": "파워 업 성공!",
+    "message": "You succesfully powered up!",
     "description": "After powering up"
   },
   "popup_pd_success": {
-    "message": "파워 다운이 시작되었습니다!",
+    "message": "You succesfully started a power down!",
     "description": "After powering down"
   },
   "popup_pd_stop": {
-    "message": "파워 다운이 중지되었습니다!",
+    "message": "You succesfully stopped a power down!",
     "description": "After powering down 0SP"
   },
   "popup_rpc_add": {
-    "message": "RPC 추가",
+    "message": "ADD RPC",
     "description": "On preferences, rpc dropdown. RPC stands for rpc node"
   },
   "popup_rpc_added": {
-    "message": "RPC 추가 성공!",
+    "message": "RPC added succesfully!",
     "description": "On preferences >Add RPC "
   },
   "popup_rpc_default": {
-    "message": "기본",
+    "message": "DEFAULT",
     "description": "On preferences, rpc dropdown."
   },
   "popup_master_changed": {
-    "message": "마스터 비밀번호가 변경되었습니다",
+    "message": "Your master password was changed succesfully",
     "description": "When changing pwd from settings"
   },
   "popup_pwd_stronger": {
-    "message": "더 강력한 비밀번호를 사용해주세요!",
+    "message": "Please use a stronger password!",
     "description": "When changing pwd from settings"
   },
   "popup_pwd_match": {
-    "message": "새로운 비밀번호가 일치하지 않습니다!",
+    "message": "The new passwords do not match!",
     "description": "When changing pwd from settings"
   },
   "popup_wrong_current_pwd": {
-    "message": "기존 비밀번호가 일치하지 않습니다",
+    "message": "Wrong current password",
     "description": "When changing pwd from settings"
   },
   "popup_website": {
-    "message": "웹사이트",
+    "message": "Website",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_broadcast": {
-    "message": "브로드캐스트",
+    "message": "Broadcast",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_add_auth": {
-    "message": "계정 권한 추가",
+    "message": "Add Account Authority",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_remove_auth": {
-    "message": "계정 권한 제거",
+    "message": "Remove Account Authority",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_custom": {
-    "message": "커스텀 트랜잭션",
+    "message": "Custom Transaction",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_decode": {
-    "message": "키 확인",
+    "message": "Verify Key",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_sign_buffer": {
-    "message": "서명",
+    "message": "Sign",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_signed_call": {
-    "message": "서명된 호출",
+    "message": "Signed Call",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_post": {
-    "message": "포스트",
+    "message": "Post",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_vote": {
-    "message": "투표",
+    "message": "Vote",
     "description": "On preferences, list of rights that were given to some websites."
   },
   "popup_token_issued_by": {
-    "message": "생성자: @$1",
+    "message": "by @$1",
     "description": "tokens > setting wheel"
   },
   "popup_token_supply": {
-    "message": "공급량",
+    "message": "Supply",
     "description": "tokens > setting wheel"
   },
   "popup_view_tokens_balance": {
-    "message": "커스텀 토큰 잔액을 확인하세요. 설정 버튼을 클릭해서 특정 토큰을 숨기거나 추가 정보를 확인할 수 있습니다.",
+    "message": "View your custom token balances. You can hide certain tokens and see more information by clicking the settings wheel.",
     "description": "on tokens page "
   },
   "popup_no_tokens": {
-    "message": "현재 보유 중인 커스텀 토큰이 없습니다. 톱니 바퀴 모양의 설정 버튼을 클릭하면 이용 <br>가능한 토큰 정보를 확인할 수 있습니다.",
+    "message": "You currently don't have any custom tokens. Click on the settings wheel to get information about the tokens available.",
     "description": "on tokens page when you dont have any"
   },
   "popup_token_key": {
-    "message": "토큰을 보내려면 액티브 키를 추가해야 합니다!",
+    "message": "Please add your active key to send tokens!",
     "description": "on tokens when trying to send tokens without having an active key registed "
   },
   "popup_no_such_account": {
-    "message": "블록체인에 존재하지 않는 사용자 이름입니다!",
+    "message": "This username is not registered on the blockchain!",
     "description": "on tokens page when trying to send tokens to a non existing user"
   },
   "popup_token_success": {
-    "message": "토큰 전송 성공!",
+    "message": "Tokens sent succesfully!",
     "description": "on tokens page when transfer was succesful"
   },
   "popup_token_timeout": {
-    "message": "아무런 응답 없이 트랜잭션이 타임 아웃되었습니다. 다시 보내기 전에 토큰 잔액을 다시 한번 확인하세요.",
+    "message": "Transaction timed out without response. Please double check your token balance before trying to send again.",
     "description": "on tokens page when transaction timed out"
   },
   "popup_proxy": {
-    "message": "프록시",
+    "message": "PROXY",
     "description": "on witness page "
   },
   "popup_success_wit": {
-    "message": "@$1 에 대한 증인 투표 성공.",
+    "message": "Succesfully voted for @$1 as a witness.",
     "description": "on witness page "
   },
   "popup_success_unvote_wit": {
-    "message": "@$1 에 대한 증인 투표 취소 성공.",
+    "message": "Succesfully unvoted @$1 as a witness.",
     "description": "on witness page when unvoting a witness"
   },
   "popup_success_proxy": {
-    "message": "@$1 에 대한 프록시 설정 성공.",
+    "message": "Succesfully chose @$1 for proxy.",
     "description": "on tokens page when chosing a proxy"
   },
   "popup_utils_full": {
-    "message": "충전완료!",
+    "message": "Already full!",
     "description": "on main page, when rc or mana is full "
   },
   "dialog_ok": {
-    "message": "확인",
+    "message": "Ok",
     "description": "Ok button"
   },
   "dialog_unlock": {
-    "message": "잠금 해제",
+    "message": "Unlock",
     "description": "Unlock button"
   },
   "dialog_cancel": {
-    "message": "취소",
+    "message": "Cancel",
     "description": "Cancel button"
   },
   "dialog_broadcasting": {
-    "message": "블록체인에 트랜잭션 브로드캐스팅 중...",
+    "message": "Broadcasting transaction to the blockchain...",
     "description": "When a website requested a transaction and it was approved."
   },
   "dialog_account": {
-    "message": "계정",
+    "message": "Account",
     "description": "When website request a transaction"
   },
   "dialog_proposal_ids": {
-    "message": "제안 ID",
+    "message": "Proposal IDs",
     "description": "When website request a proposal vote"
   },
   "dialog_approve": {
-    "message": "승인",
+    "message": "Approve",
     "description": "When website request a witness vote"
   },
   "dialog_key": {
-    "message": "키",
+    "message": "Key",
     "description": "When website request to decode with a certain key"
   },
   "dialog_author": {
-    "message": "저자",
+    "message": "Author",
     "description": "When website request a post"
   },
   "dialog_receiver": {
-    "message": "받는 사람",
+    "message": "Receiver",
     "description": "When website request a transfer"
   },
   "dialog_auth_account": {
-    "message": "위임 계정",
+    "message": "Authorized Account",
     "description": "When website request to add authority to an account"
   },
   "dialog_role": {
-    "message": "역할",
+    "message": "Role",
     "description": "When website request to add authority to an account"
   },
   "dialog_permlink": {
@@ -796,374 +812,431 @@
     "description": "When website request a post"
   },
   "dialog_weight": {
-    "message": "가중치",
+    "message": "Weight",
     "description": "When website request a vote"
   },
   "dialog_data": {
-    "message": "데이터 <span class='small'>(클릭해서 내용 보기)</span>",
+    "message": "Data <span class='small'>(click to show)</span>",
     "description": "When website request a custom json"
   },
   "dialog_to": {
-    "message": "받는 사람",
+    "message": "To",
     "description": "When website request a transfer"
   },
   "dialog_amount": {
-    "message": "수량",
+    "message": "Amount",
     "description": "When website request a transfer"
   },
   "dialog_balance": {
-    "message": "현재 잔액",
+    "message": "Balance",
     "description": "When website request a transfer"
   },
   "dialog_future_balance": {
-    "message": "전송 후 잔액",
+    "message": "Future balance",
     "description": "When website request a transfer"
   },
   "dialog_daily_pay": {
-    "message": "일일 요청량",
+    "message": "Daily Pay",
     "description": "When website request a proposal creation"
   },
   "dialog_memo": {
-    "message": "메모",
+    "message": "Memo",
     "description": "When website request a transfer"
   },
   "dialog_title": {
-    "message": "제목",
+    "message": "Title",
     "description": "When website request a post"
   },
   "dialog_body": {
-    "message": "본문 <span class='small'>(클릭해서 내용 보기)</span>",
+    "message": "Body <span class='small'>(click to show)</span>",
     "description": "When website request a post"
   },
   "dialog_period": {
-    "message": "기간",
+    "message": "Period",
     "description": "When website request a proposal creation"
   },
   "dialog_extensions": {
-    "message": "확장",
+    "message": "Extensions",
     "description": "When website request a generic broadcast"
   },
   "dialog_meta": {
-    "message": "JSON 메타데이터",
+    "message": "JSON Metadata",
     "description": "When website request a post"
   },
   "dialog_pu": {
-    "message": "부모 사용자 이름",
+    "message": "Parent Username",
     "description": "When website request a post"
   },
   "dialog_pp": {
-    "message": "부모 Permlink",
+    "message": "Parent Permlink",
     "description": "When website request a post"
   },
   "dialog_options": {
-    "message": "옵션 <span class='small'>(클릭해서 내용 보기)</span>",
+    "message": "Options <span class='small'>(click to show)</span>",
     "description": "When website request a post"
   },
   "dialog_max_payout": {
-    "message": "최대 페이아웃 : ",
+    "message": "Max Accepted Payout : ",
     "description": "When website request a post"
   },
   "dialog_percentage_sbd": {
-    "message": "SBD 비율 : ",
+    "message": "Percentage SBD : ",
     "description": "When website request a post"
   },
   "dialog_allow_votes": {
-    "message": "투표 허용 : ",
+    "message": "Allow votes : ",
     "description": "When website request a post"
   },
   "dialog_allow_curation": {
-    "message": "큐레이션 허용 : ",
+    "message": "Allow curation : ",
     "description": "When website request a post"
   },
   "dialog_beneficiaries": {
-    "message": "베니피셔리 : ",
+    "message": "Beneficiaries : ",
     "description": "When website request a post"
   },
   "dialog_delegatee": {
-    "message": "임대",
+    "message": "Delegatee",
     "description": "When website request a delegation"
   },
   "dialog_message": {
-    "message": "메시지",
+    "message": "Message",
     "description": "When website request a custom json"
   },
   "dialog_witness": {
-    "message": "증인",
+    "message": "Witness",
     "description": "When website request a witness vote"
   },
   "dialog_vote": {
-    "message": "투표",
+    "message": "Vote",
     "description": "When website request a witness vote"
   },
   "dialog_confirm": {
-    "message": "확인"
+    "message": "Confirm"
   },
   "dialog_body_toggle": {
-    "message": "본문 <span class='small'>(클릭해서 내용 보기)</span>"
+    "message": "Body <span class='small'>(click to show)</span>"
   },
   "dialog_options_toggle": {
-    "message": "옵션 <span class='small'>(클릭해서 내용 보기)</span>"
+    "message": "Options <span class='small'>(click to show)</span>"
   },
   "dialog_data_toggle": {
-    "message": "데이터 <span class='small'>(클릭해서 내용 보기)</span>"
+    "message": "Data <span class='small'>(click to show)</span>"
   },
   "dialog_header_unlock": {
-    "message": "Keychain 잠금 해제",
+    "message": "Unlock Keychain",
     "description": "When website request a transaction but keychain is locked"
   },
   "dialog_header_error": {
-    "message": "오류",
+    "message": "Error",
     "description": "Generic error"
   },
   "dialog_header_success": {
-    "message": "성공",
+    "message": "Success",
     "description": "Generic success message"
   },
   "dialog_header_wrong_pwd": {
-    "message": "잘못된 비밀번호입니다!"
+    "message": "Wrong password!"
   },
   "dialog_header_broadcasting": {
-    "message": "브로드캐스팅",
+    "message": "Broadcasting",
     "description": "when waiting from confirmation"
   },
   "dialog_title_custom": {
-    "message": "커스텀 트랜잭션",
+    "message": "Custom Transaction",
     "description": "Website request title"
   },
   "dialog_title_decode": {
-    "message": "키 확인",
+    "message": "Verify Key",
     "description": "Website request title"
   },
   "dialog_title_sign": {
-    "message": "메시지 서명하기",
+    "message": "Sign Message",
     "description": "Website request title"
   },
   "dialog_title_add_auth": {
-    "message": "권한 추가",
+    "message": "Add Authority",
     "description": "Website request title"
   },
   "dialog_title_remove_auth": {
-    "message": "권한 제거",
+    "message": "Remove Authority",
     "description": "Website request title"
   },
   "dialog_title_broadcast": {
-    "message": "브로드캐스트",
+    "message": "Broadcast",
     "description": "Website request title"
   },
   "dialog_title_call": {
-    "message": "서명된 호출",
+    "message": "Signed Call",
     "description": "Website request title"
   },
   "dialog_title_post": {
-    "message": "포스트",
+    "message": "Post",
     "description": "Website request title"
   },
   "dialog_title_vote": {
-    "message": "투표",
+    "message": "Vote",
     "description": "Website request title"
   },
   "dialog_title_transfer": {
-    "message": "전송하기",
+    "message": "Transfer",
     "description": "Website request title"
   },
   "dialog_title_delegation": {
-    "message": "임대",
+    "message": "Delegation",
     "description": "Website request title"
   },
   "dialog_title_wit": {
-    "message": "증인 투표",
+    "message": "Witness Vote",
     "description": "Website request title"
   },
   "dialog_title_token": {
-    "message": "토큰 보내기",
+    "message": "Send Tokens",
     "description": "Website request title"
   },
   "dialog_title_powerup": {
-    "message": "파워 업",
+    "message": "Power Up",
     "description": "Website request title"
   },
   "dialog_title_powerdown": {
-    "message": "파워 다운",
+    "message": "Power Down",
     "description": "Website request title"
   },
   "dialog_title_create_account": {
-    "message": "요청한 계정 생성하기",
+    "message": "Create Claimed Account",
     "description": "Website request title"
   },
   "dialog_title_create_proposal": {
-    "message": "작업자 제안서 만들기",
+    "message": "Create Worker Proposal",
     "description": "Website request title"
   },
   "dialog_title_remove_proposal": {
-    "message": "작업자 제안서 삭제",
+    "message": "Remove Worker Proposal",
     "description": "Website request title"
   },
   "dialog_title_vote_proposal": {
-    "message": "제안 투표하기",
+    "message": "Vote for Proposal",
     "description": "Website request title"
   },
   "dialog_no_prompt_verify": {
-    "message": "$2에서 @$1 계정 키를 확인하는 창을 다시 보고 싶지 않습니다.",
+    "message": "Do not prompt again to verify keys for the @$1 account on $2",
     "description": "When a website request a verification using posting key and you dont want it to pop all the time"
   },
   "dialog_no_prompt": {
-    "message": "$3 의 @$2 계정에서 발생하는 $1 트랜잭션 확인 창을 다시 보고 싶지 않습니다.",
+    "message": "Do not prompt again to send $1 transactions from the @$2 account on $3",
     "description": "When a website request a transaction using posting key and you dont want it to pop all the time"
   },
   "dialog_desc_verify": {
-    "message": "$1 웹사이트에서 당신이 @$3 계정의 $2 키에 접근할 수 있는지 확인하려 합니다.",
+    "message": "The website $1 would like to verify that you have access to the private $2 key for the account: @$3",
     "description": "key verification message"
   },
   "dialog_desc_sign": {
-    "message": "$1 웹사이트에서 @$3 계정의 $2 키를 이용해 메시지에 서명하려고 합니다.",
+    "message": "The website $1 would like to sign a message using the $2 key for the account: @$3",
     "description": "Sign message"
   },
   "dialog_expand": {
-    "message": "...(클릭하면 확장됩니다)",
+    "message": "...(click to expand)",
     "description": "Toggle"
   },
   "bgd_init_no_wallet": {
-    "message": "지갑 생성이 필요합니다!",
+    "message": "No wallet!",
     "description": "when user didnt create a wallet yet"
   },
   "bgd_lifecycle_request_canceled": {
-    "message": "사용자가 요청을 취소했습니다.",
+    "message": "Request was canceled by the user.",
     "description": "Generic answer to websites when user cancel transaction (in the background so it wont show on screen)"
   },
   "bgd_context_transfer_user": {
-    "message": "%s 에게 STEEM/SBD 보내기",
+    "message": "Transfer STEEM/SBD to %s",
     "description": "Context menu (when right click on a username on steemit)"
   },
   "bgd_context_memo_user": {
-    "message": "@%s 에게 메모 메시지 보내기",
+    "message": "Send a MEMO message to @%s",
     "description": "Context menu (when right click on a username on steemit)"
   },
   "bgd_context_tip_user": {
-    "message": "@%s 에게 팁 주기",
+    "message": "Tip @%s",
     "description": "Context menu (when right click on a username on steemit)"
   },
   "bgd_context_transfer_author": {
-    "message": "저자에게 STEEM/SBD 전송하기",
+    "message": "Transfer STEEM/SBD to this author",
     "description": "Context menu (when right click on a username on steemit)"
   },
   "bgd_context_memo_author": {
-    "message": "저자에게 메모 메시지 보내기",
+    "message": "Send a MEMO message to this author",
     "description": "Context menu (when right click on a username on steemit)"
   },
   "bgd_context_tip_author": {
-    "message": "저자에게 팁 보내기",
+    "message": "Tip this author",
     "description": "Context menu (when right click on a username on steemit)"
   },
   "bgd_auth_locked": {
-    "message": "지갑이 잠겨있습니다!"
+    "message": "The wallet is locked!"
   },
   "bgd_auth_locked_desc": {
-    "message": "현재 웹사이트에서 Steem Keychain 브라우저 확장 프로그램에 요청을 보내고 있습니다. 지갑 잠금 해제를 위해 비밀번호를 입력한 후 다음 단계를 진행해주세요."
+    "message": "The current website is trying to send a request to the Steem Keychain browser extension. Please enter your password below to unlock the wallet and continue."
   },
   "bgd_auth_canceled": {
-    "message": "사용자가 요청을 취소했습니다."
+    "message": "Request was canceled by the user."
   },
   "bgd_auth_transfer_no_active": {
-    "message": "현재 웹사이트에서 Steem Keychain 브라우저 확장 프로그램에게 @$1 계정의 액티브 키가 필요한 전송 요청을 보내고 있으며, 해당 키는 아직 지갑에 추가되지 않았습니다."
+    "message": "The current website is trying to send a transfer request to the Steem Keychain browser extension for account @$1 using the active key, which has not been added to the wallet."
   },
   "bgd_auth_transfer_no_memo": {
-    "message": "현재 웹사이트에서 Steem Keychain 브라우저 확장 프로그램에게 @$1 계정의 메모 키를 요청하고 있으며, 해당 키는 아직 지갑에 추가되지 않았습니다."
+    "message": "The current website is trying to send a request to the Steem Keychain browser extension for account @$1 using the memo key, which has not been added to the wallet."
   },
   "bgd_auth_no_account": {
-    "message": "현재 웹사이트에서 Steem Keychain 브라우저 확장 프로그램에게 @$1 계정을 요청하고 있으며, 해당 계정은 아직 지갑에 추가되지 않았습니다."
+    "message": "The current website is trying to send a request to the Steem Keychain browser extension for account @$1 which has not been added to the wallet."
   },
   "bgd_auth_no_key": {
-    "message": "현재 웹사이트에서 Steem Keychain 브라우저 확장 프로그램에게 @$1 계정의 $2 키를 요청하고 있으며, 해당 키는 아직 지갑에 추가되지 않았습니다."
+    "message": "The current website is trying to send a request to the Steem Keychain browser extension for account @$1 using the $2 key, which has not been added to the wallet."
   },
   "bgd_ops_witness_voted": {
-    "message": "@$1 에 대한 증인 투표 성공."
+    "message": "Successfully voted @$1 for witness."
   },
   "bgd_ops_witness_unvoted": {
-    "message": "@$1 에 대한 증인 투표 취소 성공."
+    "message": "Successfully unvoted @$1 for witness."
   },
   "bgd_ops_vote": {
-    "message": "@$1 님이 작성한 $2 글에 $3% 가중치로 투표했습니다."
+    "message": "Successfully voted for @$1's post $2 at $3%."
   },
   "bgd_ops_transfer_adjust_balance": {
-    "message": "@$2 계정에 보유 중인 $1 잔액이 충분하지 않습니다."
+    "message": "Insufficient $1 balance on account @$2."
   },
   "bgd_ops_transfer_get_account": {
-    "message": "@$1 계정을 찾을 수 없습니다."
+    "message": "Cannot find account @$1."
   },
   "bgd_ops_error_broadcasting": {
-    "message": "이 트랜잭션을 브로드캐스팅 하던 중 오류가 발생했습니다. 다시 시도해주세요."
+    "message": "There was an error broadcasting this transaction, please try again."
   },
   "bgd_ops_error": {
-    "message": "이 트랜잭션을 브로드캐스팅 하던 중 오류가 발생했습니다."
+    "message": "There was an error broadcasting this transaction:"
   },
   "bgd_ops_transfer_success": {
-    "message": "@$3 님이 @$4 님에게 $1 $2 을 전송했습니다."
+    "message": "Successfully transfered $1 $2 from @$3 to @$4."
   },
   "bgd_ops_tokens": {
-    "message": "트랜잭션이 브로드캐스트되었습니다. 잔액을 확인해서 잘 처리되었는지 체크해보세요."
+    "message": "The transaction has been broadcasted successfully. Please check your balance to confirm that it was processed succesfully."
   },
   "bgd_ops_signed_call": {
-    "message": "성공!"
+    "message": "Success!"
   },
   "bgd_ops_sign_success": {
-    "message": "메시지 서명 성공."
+    "message": "Message signed succesfully."
   },
   "bgd_ops_sign_error": {
-    "message": "서명할 수 없습니다."
+    "message": "Could not sign."
   },
   "bgd_ops_proposal_create": {
-    "message": "새로운 제안서가 생성되었습니다."
+    "message": "Successfully created a new proposal."
   },
   "bgd_ops_proposal_remove": {
-    "message": "#$1 번째 제안을 제거했습니다."
+    "message": "Successfully removed proposal #$1."
   },
   "bgd_ops_proposal_vote": {
-    "message": "#$1 번째 제안에 투표했습니다."
+    "message": "Successfully voted for proposal #$1."
   },
   "bgd_ops_proposal_unvote": {
-    "message": "#$1 번째 제안에 대한 투표를 취소했습니다."
+    "message": "Successfully unvoted proposal #$1."
   },
   "bgd_ops_pu": {
-    "message": "@$2 계정에서 $1 STEEM 파워 업 성공"
+    "message": "Powered up $1 STEEM on @$2."
   },
   "bgd_ops_pd": {
-    "message": "@$2 계정에서 $1 SP 파워 다운이 시작되었습니다."
+    "message": "Started a $1 SP power down on @$2."
   },
   "bgd_ops_pd_stop": {
-    "message": "@$1의 파워 다운이 중지되었습니다."
+    "message": "Stopped Power Down on @$1."
   },
   "bgd_ops_post": {
-    "message": "글이 전송되었습니다."
+    "message": "The post was submitted succesfully."
   },
   "bgd_ops_undelegate": {
-    "message": "@$2 계정이 @$1 계정에 대한 임대를 중지했습니다."
+    "message": "Succesfully stopped the delegation to @$1 from account @$2."
   },
   "bgd_ops_delegate": {
-    "message": "@$3 계정이 @$2 계정에게 $1 SP를 임대했습니다."
+    "message": "Succesfully delegated $1 SP from @$3 to @$2."
   },
   "bgd_ops_decode": {
-    "message": "메모 복호화 성공."
+    "message": "Memo decoded succesfully."
   },
   "bgd_ops_decode_err": {
-    "message": "키를 확인할 수 없습니다."
+    "message": "Could not verify key."
   },
   "bgd_ops_broadcast": {
-    "message": "트랜잭션 브로드캐스트 성공"
+    "message": "The transaction has been broadcasted successfully."
   },
   "bgd_ops_create_account": {
-    "message": "@$1 계정 생성 성공."
+    "message": "Succesfully created account @$1."
   },
   "bgd_ops_add_auth": {
-    "message": "@$3 계정이 @$2 계정에게 $1 권한을 부여했습니다."
+    "message": "Succesfully gave $1 authority to @$2 on account @$3."
   },
   "bgd_ops_remove_auth": {
-    "message": "@$3 계정이 @$2 계정에 부여한 $1 권한을 삭제했습니다."
+    "message": "Succesfully removed $1 authority from @$2 on account @$3."
   },
   "popup_account_redeem": {
-    "message": "요청할 수 있는 보상 현황",
+    "message": "You have Rewards ready to redeem in the amount of",
     "description": "On claim reward page (click little gift icon from main page when rewards are available to claim)"
   },
   "popup_html_send_transfer": {
-    "message": "보내기"
+    "message": "Send"
+  },
+  "dialog_title_add_key_auth": {
+    "message": "Add Key"
+  },
+  "dialog_title_remove_key_auth": {
+    "message": "Remove Key"
+  },
+  "dialog_auth_key": {
+    "message": "Key",
+    "context": "New key to be added"
+  },
+  "bgd_ops_add_key_auth": {
+    "message": "$1 has been added as a $2 key for account @$3 with a weight of $4.",
+    "context": "Succesfully added a new keypair"
+  },
+  "bgd_ops_remove_key_auth": {
+    "message": "$1 has been removed as a $2 key for account @$3.",
+    "context": "succesfully removed a keypair"
+  },
+  "popup_html_add_by_keys": {
+    "message": "Use keys/pwd",
+    "context": "When adding new account. In a button, must keep short. "
+  },
+  "popup_html_add_by_auth": {
+    "message": "Use authorized account",
+    "context": "When adding new account. In a button, must keep short."
+  },
+  "popup_html_chose_add_method": {
+    "message": "You can add your keys by entring a private key or your master password.<br/>Alternatively, you can specify an authorized account.",
+    "context": "Text when adding new method."
+  },
+  "popup_html_auth_text": {
+    "message": "Add the new account by specifying an account that has authority over it, and that is already saved in Steem Keychain.",
+    "context": "On Add new account => via auth"
+  },
+  "popup_html_auth_placeholder_username": {
+    "message": "Username"
+  },
+  "popup_html_auth_placeholder_username_auth": {
+    "message": "Authorized Account",
+    "context": "The placeholder for the authorized account that will use its keys for this account."
+  },
+  "popup_no_auth_account": {
+    "message": "Please save @$1 in Steem Keychain to use it as an authorized account."
+  },
+  "popup_accounts_no_auth": {
+    "message": "@$1 does not have authority over @$2.",
+    "context": "When trying to add an account via authority"
+  },
+  "import_html_text": {
+    "message": "Import your keys from another Keychain instance using a .kc file.<br/><br/>You need to use the same master password on both instances to decrypt the keys."
+  },
+  "import_html_success": {
+    "message": "You succesfully imported your keys!"
+  },
+  "import_html_error": {
+    "message": "There was an error importing your keys.<br/>Make sure you that you are using the same master key than when you exported the file."
   }
 }

@@ -1,3 +1,5 @@
+const IS_LOCAL_DEV = true;  // 개발 테스트인 경우 처리 (simple, added logs ...)
+
 let mk = null;
 let activeAccount;
 const STEEMIT_VOTE_REGENERATION_SECONDS = 5 * 60 * 60 * 24;
@@ -131,6 +133,7 @@ $("#forgot_div button").click(function() {
 });
 
 // Registration confirmation
+// 신규 등록 확인 경고창 
 $("#submit_master_pwd").click(function() {
   if (acceptMP($("#master_pwd").val())) {
     if ($("#master_pwd").val() == $("#confirm_master_pwd").val()) {
@@ -145,7 +148,14 @@ $("#submit_master_pwd").click(function() {
     showError(chrome.i18n.getMessage("popup_password_regex"));
   }
 });
+
+/// 마스터 암호[mp]규칙
 function acceptMP(mp) {
+  // 테스트용
+  if (IS_LOCAL_DEV && mp.length>=1){
+    return true;
+  }
+  // 16자 이상 또는 8자 이상에 대문자, 소문자, 숫자를 포함
   return (
     mp.length >= 16 ||
     (mp.length >= 8 &&
